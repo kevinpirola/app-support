@@ -1,8 +1,3 @@
----
-layout: default
-title: Support & Project Info
----
-
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -55,13 +50,12 @@ title: Support & Project Info
   <p>If you'd like to support ongoing development or contribute to backend maintenance, you can send an occasional contribution below:</p>
 
   <div class="btn-grid">
-    <a class="tip-btn" href="https://www.paypal.com/paypalme/YOUR_PAYPAL_HANDLE/2" target="_blank" rel="noopener">🍺 1 Piccola (2€)</a>
-    <a class="tip-btn" href="https://www.paypal.com/paypalme/YOUR_PAYPAL_HANDLE/5" target="_blank" rel="noopener">🍺 1 Media (5€)</a>
-    <a class="tip-btn" href="https://www.paypal.com/paypalme/YOUR_PAYPAL_HANDLE/10" target="_blank" rel="noopener">🍻 2 Medie (10€)</a>
-    <a class="tip-btn" href="https://www.paypal.com/paypalme/YOUR_PAYPAL_HANDLE/20" target="_blank" rel="noopener">🍕 Pizza & Birra (20€)</a>
+    <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/5" target="_blank" rel="noopener">🍺 1 Media (5€)</a>
+    <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/10" target="_blank" rel="noopener">🍻 2 Medie (10€)</a>
+    <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/50" target="_blank" rel="noopener">Dignitosamente brillo (50€)</a>
+    <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/100" target="_blank" rel="noopener">Coma etilico (200€)</a>
   </div>
 
   <p class="legal-note">
     <em>Notice: Contributions are voluntary personal gifts of modest value (art. 769 c.c.) without any commercial return, unlockable features, or services.</em>
-  </p>
-</div>
+  </p></div>
