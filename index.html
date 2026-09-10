@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Support</title>
+  <title>Pieamojo - Developer Support</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,6 +20,19 @@
       padding: 32px;
       background: #ffffff;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 4px;
+      border: 3px solid #f6f8fa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .lang-switch {
       display: flex;
@@ -49,9 +62,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      margin-top: 24px;
+      margin-top: 16px;
     }
-    .tip-btn {
+    .tip-btn, .action-btn {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -64,16 +77,47 @@
       transition: background-color 0.15s ease;
       text-align: center;
     }
-    .tip-btn:hover {
+    .tip-btn:hover, .action-btn:hover {
       background-color: #005ea6;
     }
+    .action-btn {
+      background-color: #24292f;
+    }
+    .action-btn:hover {
+      background-color: #000000;
+    }
+    .action-btn.secondary {
+      background-color: #ffffff;
+      color: #24292f !important;
+      border: 1px solid #d0d7de;
+    }
+    .action-btn.secondary:hover {
+      background-color: #f3f4f6;
+    }
+    .section-divider {
+      margin: 32px 0;
+      border-top: 1px solid #eaeef2;
+    }
     .legal-note {
-      margin-top: 32px;
       font-size: 0.85em;
       color: #57606a;
-      border-top: 1px solid #eaeef2;
-      padding-top: 16px;
       text-align: center;
+      margin-top: 16px;
+    }
+    .footer-links {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.9em;
+      padding-bottom: 40px;
+    }
+    .footer-links a {
+      color: #57606a;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+      color: #0070ba;
     }
     .lang-content {
       display: none;
@@ -84,6 +128,10 @@
     h2 {
       margin-top: 0;
       text-align: center;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: 12px;
     }
     p {
       text-align: center;
@@ -98,41 +146,79 @@
       <button onclick="setLang('it')" id="btn-it">Italiano</button>
     </div>
 
+    <div class="header">
+      <img src="https://github.com/kevinpirola.png" alt="Gianmarco Laggia" class="avatar">
+      <h2>Gianmarco Laggia</h2>
+    </div>
+
     <!-- English Content -->
     <div id="content-en" class="lang-content active">
-      <h2>Developer & Support</h2>
-      <p>Thank you for using my app! This project is maintained independently in my spare time.</p>
-      <p>If you'd like to support ongoing development, you can buy me a beer (or a few) below:</p>
+      <p>Thank you for using <strong>Pieamojo</strong>! This project is developed and maintained independently in my spare time.</p>
       
+      <div class="section-divider"></div>
+
+      <h3>🍻 Support the Development</h3>
+      <p>If you enjoy the app and want to support its ongoing development, you can buy me a beer below:</p>
       <div class="btn-grid">
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/5" target="_blank" rel="noopener">🍺 1 Beer (5€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/10" target="_blank" rel="noopener">🍻 2 Beers (10€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/50" target="_blank" rel="noopener">🍷 Tipsy (50€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/200" target="_blank" rel="noopener">🥃 Wasted (200€)</a>
       </div>
-
       <p class="legal-note">
         <em>Notice: Contributions are voluntary personal gifts without any commercial return, unlockable features, or services.</em>
       </p>
+
+      <div class="section-divider"></div>
+
+      <h3>⭐ Other ways to help</h3>
+      <p>Not ready for a beer? No problem! A 5-star review on the App Store helps just as much.</p>
+      <!-- ADD YOUR APP STORE LINK HERE -->
+      <a class="action-btn" href="#" target="_blank" rel="noopener">Leave a Review</a>
+
+      <div class="section-divider"></div>
+
+      <h3>✉️ Feedback & Support</h3>
+      <p>Found a bug or have a feature request? I'd love to hear from you.</p>
+      <a class="action-btn secondary" href="mailto:gianmarco.laggia@gmail.com?subject=Pieamojo%20Feedback">Send an Email</a>
     </div>
 
     <!-- Italian Content -->
     <div id="content-it" class="lang-content">
-      <h2>Sviluppatore e Supporto</h2>
-      <p>Grazie per aver usato la mia app! Questo progetto è mantenuto in modo indipendente nel mio tempo libero.</p>
-      <p>Se vuoi supportare lo sviluppo continuo, puoi offrirmi una birra (o più di una) qui sotto:</p>
+      <p>Grazie per aver scaricato <strong>Pieamojo</strong>! Questo progetto è sviluppato e mantenuto in modo indipendente nel mio tempo libero.</p>
       
+      <div class="section-divider"></div>
+
+      <h3>🍻 Supporta lo Sviluppo</h3>
+      <p>Se l'app ti piace e vuoi supportare il mio lavoro, puoi offrirmi una birra qui sotto:</p>
       <div class="btn-grid">
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/5" target="_blank" rel="noopener">🍺 1 Media (5€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/10" target="_blank" rel="noopener">🍻 2 Medie (10€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/50" target="_blank" rel="noopener">🍷 Dignitosamente brillo (50€)</a>
         <a class="tip-btn" href="https://www.paypal.com/paypalme/GianmarcoLaggia/200" target="_blank" rel="noopener">🥃 Coma etilico (200€)</a>
       </div>
-
       <p class="legal-note">
         <em>Nota: Le donazioni sono regali personali volontari di modico valore (art. 769 c.c.) senza alcun ritorno commerciale, funzioni sbloccabili o servizi.</em>
       </p>
+
+      <div class="section-divider"></div>
+
+      <h3>⭐ Altri modi per aiutare</h3>
+      <p>Non vuoi offrire una birra? Nessun problema! Una recensione a 5 stelle sugli store mi aiuta tantissimo.</p>
+      <!-- ADD YOUR APP STORE LINK HERE -->
+      <a class="action-btn" href="#" target="_blank" rel="noopener">Lascia una Recensione</a>
+
+      <div class="section-divider"></div>
+
+      <h3>✉️ Feedback e Supporto</h3>
+      <p>Hai trovato un bug o hai un'idea per una nuova funzione? Scrivimi!</p>
+      <a class="action-btn secondary" href="mailto:gianmarco.laggia@gmail.com?subject=Feedback%20Pieamojo">Invia un'Email</a>
     </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="privacy.html" id="privacy-link-en">Privacy Policy</a>
+    <a href="privacy.html" id="privacy-link-it" style="display:none;">Informativa sulla Privacy</a>
   </div>
 
   <script>
@@ -148,6 +234,15 @@
       // Show selected content and activate button
       document.getElementById('content-' + lang).classList.add('active');
       document.getElementById('btn-' + lang).classList.add('active');
+
+      // Update footer links
+      if (lang === 'it') {
+        document.getElementById('privacy-link-en').style.display = 'none';
+        document.getElementById('privacy-link-it').style.display = 'inline';
+      } else {
+        document.getElementById('privacy-link-en').style.display = 'inline';
+        document.getElementById('privacy-link-it').style.display = 'none';
+      }
     }
 
     // Auto-detect browser language on load
